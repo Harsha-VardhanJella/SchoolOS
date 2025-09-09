@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str
     JWT_SECRET: str
     JWT_EXPIRES_MINUTES: int = 30
+    JWT_EXPIRES_REFRESH: int=7
     CORS_ORIGINS: str = "http://localhost:5173"
 
     class Config:
